@@ -1,7 +1,24 @@
 # mesto-db
 ## версия 0.0.1
 
-Учебный проект, целью которого является получения навыка работы с MongoDB для серверной разработки на Node.js.
+## Описание
+Учебный проект, целью которого является получения навыка работы с MongoDB для серверной разработки на Node.js. Является продолжением проекта https://github.com/LyudmilaLebedeva/mesto-backend
+
+## Используемые технологии
+- JavaScript
+- Node.js
+- Express.js
+- MongoDB
+- API.REST
+
+## Функционал
+- локально к серверу можно обратиться по адресу http://localhost:3000
+- приложение подключается к серверу Mongo по адресу mongodb://localhost:27017/mestodb;
+- запрос на GET /users возвращает всех пользователей из базы;
+- запрос GET /users/:userId возвращает конкретного пользователя;
+- запрос POST /users создаёт пользователя;
+- запрос GET /cards возвращает все карточки всех пользователей;
+- запрос POST /cards создаёт карточку;
 
 ## Как запустить
 Для запуска используйте команду 
@@ -12,14 +29,5 @@ npm run start
 ```
 npm run dev
 ```
-
-В проекте реализована обработка следующих запросов:
-- GET
-      localhost:3000/cards
-      localhost:3000/users
-      localhost:3000/users/:userId
-- DELETE
-      localhost:3000/cards/:cardId
-- POST
-      localhost:3000/users
-      localhost:3000/cards
+## Развитие проекта
+Последующие задачи по развитию проекта (защита роутов авторизацией) решаются здесь https://github.com/LyudmilaLebedeva/mesto-auth
